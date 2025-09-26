@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy birthday Samaneh ❤️</title>
+    <style>
+        /* --- انیمیشن ها و استایل های جدید --- */
+        @keyframes pulse {
+            0% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.05); opacity: 0.9; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+
+        @keyframes glow {
+            0% { text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #ff00ff, 0 0 20px #ff00ff, 0 0 25px #ff00ff; }
+            50% { text-shadow: 0 0 7px #fff, 0 0 14px #fff, 0 0 21px #fff, 0 0 28px #ff00ff; }
+            100% { text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #ff00ff, 0 0 20px #ff00ff, 0 0 25px #ff00ff; }
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes subtleBackgroundChange {
+            0% { background-color: rgba(253, 14, 143, 0.75); } /* صورتی کمی شفاف */
+            50% { background-color: rgba(0, 200, 255, 0.70); } /* آبی ملایم */
+            100% { background-color: rgba(253, 14, 143, 0.75); } /* بازگشت به صورتی */
+        }
+        /* --- پایان انیمیشن ها --- */
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-image: url('IMG_20250923_232448_979.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            /* background-color: #f0f0f0;  این خط رو کامنت کردم چون رنگ پس‌زمینه رو با انیمیشن تغییر میدیم */
+            overflow: hidden;
+            /* --- انیمیشن اصلی برای کل صفحه --- */
+            animation: fadeIn 1.5s ease-out forwards, subtleBackgroundChange 15s infinite alternate;
+        }
+        .container {
+            text-align: center;
+            /* background-color: rgba(253, 14, 143, 0.80);  این خط هم کامنت شد برای انیمیشن */
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* سایه رو کمی بیشتر کردم */
+            max-width: 90%;
+            box-sizing: border-box;
+            /* --- افکت رنگی برای کانتینر --- */
+            background-color: rgba(253, 14, 143, 0.75); /* شروع رنگ صورتی */
+            animation: fadeIn 1s ease-out 0.5s forwards, subtleBackgroundChange 15s infinite alternate; /* تاخیر کمی برای ظاهر شدن */
+        }
+        h1 {
+            color: #ffffff; /* متن سفید برای کنتراست بهتر */
+            margin-bottom: 20px;
+            font-size: 3em; /* فونت بزرگتر برای تیتر */
+            /* --- انیمیشن های تیتر --- */
+            animation: pulse 3s infinite ease-in-out, glow 4s infinite ease-in-out alternate;
+            text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #ff00ff, 0 0 20px #ff00ff; /* شروع سایه */
+        }
+        audio {
+            width: 80%; /* کمی کوچکترش کردم */
+            margin-top: 20px;
+            border-radius: 5px; /* گوشه های گرد برای پلیر صدا */
+            animation: fadeIn 1s ease-out 1s forwards; /* تاخیر برای ظاهر شدن */
+        }
+        p {
+            font-size: 1.2em; /* فونت کمی بزرگتر */
+            line-height: 1.6;
+            color: #ffffff; /* متن سفید */
+            margin-top: 15px;
+            margin-bottom: 15px;
+            animation: fadeIn 1s ease-out 1.5s forwards; /* تاخیر برای ظاهر شدن */
+        }
+        p:last-of-type { /* انیمیشن برای آخرین پاراگراف (با آرزوی موفقیت...) */
+            animation: fadeIn 1s ease-out 2s forwards; /* تاخیر بیشتر */
+            font-weight: bold; /* پررنگ تر */
+        }
+
+        /* برای اطمینان از خوانایی روی پس زمینه */
+        h1, p {
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* سایه متن برای خوانایی بهتر */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Happy birthday Samaneh ❤️</h1>
+        <p>I love You ❤️</p>
+        <audio controls autoplay loop>
+            <source src="Tavalodet Mobarak Golam (320).mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <p>با آرزوی موفقیت از طرف یاسمن</p>
+    </div>
+</body>
+</html>
